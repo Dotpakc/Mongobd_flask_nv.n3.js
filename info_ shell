@@ -1,0 +1,1 @@
+mongoimport --db ussa --collection us_cont --drop --file /home/dpack/Mongobd_flask_nv.n3.js/zips.json

@@ -1,0 +1,23 @@
+  svg {
+      display: block;
+        }
+  html, body, #chart1, svg {
+      margin: 0px;
+      padding: 0px;
+      height: 98%;
+      width: 100%;
+      background-color: #bed6ae;
+  }
+ #footer {
+     font: 18px sans-serif;
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px 20px 10px 10px;
+    background: #39b54a;
+    color: #fff;
+    width: 100%;
+   }
+ #footer a {
+     color: #fff;
+     text-decoration: none;
+ }
