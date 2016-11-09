@@ -14,15 +14,12 @@ def sort():
     base=[]
     proof = []
 
-    cities = list(db.us_cont.find().sort('pop', -1).limit(50)) #limit can >50
-    for cut in cities:
+    cities = list(db.us_cont.find().sort('pop', -1)) # import from mongodb 
+    while len(proof)<21:
         # dont repeat
         if cut["city"] not in proof:
-            #only 20 cities
-            if len(proof)<21:
                 proof.append(cut["city"])
-                base.append({"label":cut["city"],"value":str(cut["pop"])})
-            else:break
+                base.append({"label":cut["city"],"value":str(cut["pop"])}) 
 
 #request main
 @app.route('/')
